@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="192.066" tests="11" skipped="0" failures="0" errors="0">
+<testcase classname="Emergency Contacts" name="Successfully Add Emergency Contact" time="22.105">
+<system-out><![CDATA[
+Given user is on Emergency Contacts page....................................passed
+When clicks on add button of assigned emergency contact.....................passed
+And enters requuired mandatory details......................................passed
+And clicks on save button...................................................passed
+Then contact should be added into emergency contact.........................passed
+And contact should be displayed into records................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Emergency Contacts" name="Unsuccessful to Add Emergency Contact" time="18.218">
+<system-out><![CDATA[
+Given user is on Emergency Contacts page....................................passed
+When clicks on add button of assigned emergency contact.....................passed
+And not enter required mandatory details....................................passed
+And clicks on save button...................................................passed
+Then contact should not be added into emergency contact.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Emergency Contacts" name="Edit Emergency Contact" time="29.658">
+<system-out><![CDATA[
+Given user is on Emergency Contacts page....................................passed
+When user clicks on edit button of any record...............................passed
+And enters new data.........................................................passed
+And clicks on save button...................................................passed
+Then contact should be edited into emergency contact........................passed
+And updated contact should be displayed into records........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Emergency Contacts" name="Delete a single Emergency Contact" time="21.517">
+<system-out><![CDATA[
+Given user is on Emergency Contacts page....................................passed
+When user clicks on delete button of any record of assigned emergency contact.passed
+And clicks on yes,delete button.............................................passed
+Then contact should be deleted from emergency contact.......................passed
+And deleted contacts should not be displayed into emergency contact records.passed
+]]></system-out>
+</testcase>
+<testcase classname="Emergency Contacts" name="Delete multiple Emergency Contacts" time="28.333">
+<system-out><![CDATA[
+Given user is on Emergency Contacts page....................................passed
+When selects multiple contacts through checkbox.............................passed
+And clicks on delete selected...............................................passed
+Then selected contacts should be deleted from emergency contact.............passed
+And deleted contact should not be displayed into emergency contact records..passed
+]]></system-out>
+</testcase>
+<testcase classname="Ess user login" name="Successful login" time="14.966">
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When user enters vaild credentials..........................................passed
+And clicks on login button..................................................passed
+Then user should able to logged in successfully.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ess user login" name="Unsuccessful login" time="9.141">
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When user enters invaild credentials........................................passed
+And clicks on login button..................................................passed
+Then user should not be able to login and dashboard should not be displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ess user login" name="Unsuccessful login" time="8.99">
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When user enters vaild username and invalid password........................passed
+And clicks on login button..................................................passed
+Then user should not be able to login and dashboard should not be displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ess user login" name="Unsuccessful login" time="10.747">
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When user enters invaild username and valid password........................passed
+And clicks on login button..................................................passed
+Then user should not be able to login and dashboard should not be displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ess user login" name="Forgot password" time="9.02">
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When user forgot the password...............................................passed
+And clicks on Forgot your password..........................................passed
+Then reset password page should be displayed................................passed
+]]></system-out>
+</testcase>
+<testcase classname="sidebar" name="sidebar modules" time="18.992">
+<system-out><![CDATA[
+Given user is on dashboard page.............................................passed
+When user clicks on My Info.................................................passed
+Then PIM page should be displayed...........................................passed
+And modules of My Info page should be displayed.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
